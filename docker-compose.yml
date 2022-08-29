@@ -27,7 +27,7 @@ services:
   stable-diffusion-old-port-redirect:
     container_name: sd-old-port-redirect
     ports:
-      - '8000:8000'
+      - '9001:8000'
     build:
       context: .
       dockerfile: OldPortDockerfile
