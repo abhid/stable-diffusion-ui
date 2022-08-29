@@ -20,7 +20,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/app
+      - /root/stable-diffusion:/app
     depends_on:
       - stability-ai
 
@@ -32,7 +32,7 @@ services:
       context: .
       dockerfile: OldPortDockerfile
     volumes:
-      - .:/app
+      - /root/stable-diffusion:/app
 
 networks:
   default:
